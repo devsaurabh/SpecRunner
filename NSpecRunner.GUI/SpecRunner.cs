@@ -183,9 +183,11 @@ namespace NSpecRunner.GUI
         /// <param name="e"></param>
         private void treeSpecs_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            SetControls();
             if (_isReady)
             {
+                if (treeSpecs.SelectedNode != null && treeSpecs.SelectedNode.Level > 0)
+                    CloseAssemblyMenuItem.Enabled = true;
+
                 lblSelectedNode.Text = e.Node.Text;
 
                 if (e.Node.Parent == null)
