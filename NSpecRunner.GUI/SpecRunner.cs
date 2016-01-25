@@ -42,7 +42,7 @@ namespace NSpecRunner.GUI
         }
         
         #endregion
-
+         
         #region Private Events
 
         /// <summary>
