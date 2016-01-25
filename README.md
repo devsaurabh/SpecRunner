@@ -1,7 +1,7 @@
 # SpecRunner
 A simple Windows GUI for running nsepcs
 
-If you are into unit testing and have used the NSpec, the only thing you have missed is a tool to run the specs at will. Though we have specwatcher and other Test runners that support NSpec, having a separate tool is always welcome. So I decided to create this tool on the steps of NUnit Runner.
+If you are into unit testing and have used the NSpec, the only thing you have missed is a tool to run the specs at will. Though we have SpecWatchr (If you are into Continuos testing) and other Test runners that support NSpec, having a separate tool is always welcome. So I decided to create this tool on the steps of NUnit Runner.
 
 ## What it does?
 * Load one or multiple assembles
