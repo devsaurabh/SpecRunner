@@ -18,6 +18,7 @@ namespace NSpecRunner.GUI
     {
         #region Private Members
 
+        private const string HELP_URL = "https://github.com/devsaurabh/SpecRunner/wiki/Using-the-tool";
         private NSpecHelper _nspecHelper;
         private bool _isReady;
         private List<string> _assemblies;
@@ -481,6 +482,16 @@ namespace NSpecRunner.GUI
             });
         }
 
+        /// <summary>
+        ///  Shows help for the tool
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SpecHelpMenuStrip_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo(HELP_URL);
+            Process.Start(sInfo);
+        }
         #endregion
 
         #region Private Methods

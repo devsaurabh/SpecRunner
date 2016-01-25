@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace NSpecRunner.GUI
         public About()
         {
             InitializeComponent();
+        }
+
+        private void lnkWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo(lnkWebsite.Text);
+            Process.Start(sInfo);
         }
     }
 }

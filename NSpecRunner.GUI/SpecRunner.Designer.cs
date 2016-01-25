@@ -77,6 +77,7 @@
             this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpecHelpMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -559,6 +560,7 @@
             // HelpMenuStrip
             // 
             this.HelpMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SpecHelpMenuStrip,
             this.AboutMenuStrip});
             this.HelpMenuStrip.Name = "HelpMenuStrip";
             this.HelpMenuStrip.Size = new System.Drawing.Size(44, 20);
@@ -567,9 +569,16 @@
             // AboutMenuStrip
             // 
             this.AboutMenuStrip.Name = "AboutMenuStrip";
-            this.AboutMenuStrip.Size = new System.Drawing.Size(107, 22);
-            this.AboutMenuStrip.Text = "&About";
+            this.AboutMenuStrip.Size = new System.Drawing.Size(182, 22);
+            this.AboutMenuStrip.Text = "&About SpecRunner...";
             this.AboutMenuStrip.Click += new System.EventHandler(this.AboutMenuStrip_Click);
+            // 
+            // SpecHelpMenuStrip
+            // 
+            this.SpecHelpMenuStrip.Name = "SpecHelpMenuStrip";
+            this.SpecHelpMenuStrip.Size = new System.Drawing.Size(182, 22);
+            this.SpecHelpMenuStrip.Text = "SpecRunner Help...";
+            this.SpecHelpMenuStrip.Click += new System.EventHandler(this.SpecHelpMenuStrip_Click);
             // 
             // SpecRunner
             // 
@@ -664,6 +673,7 @@
         private System.Windows.Forms.ToolStripMenuItem HelpMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem ReloadMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem SpecHelpMenuStrip;
     }
 }
 
