@@ -494,6 +494,7 @@
             this.ReloadMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.ReloadMenuItem.Size = new System.Drawing.Size(220, 22);
             this.ReloadMenuItem.Text = "&Reload";
+            this.ReloadMenuItem.Click += new System.EventHandler(this.ReloadMenuItem_Click);
             // 
             // CloseProjectMenuItem
             // 
@@ -566,7 +567,7 @@
             // AboutMenuStrip
             // 
             this.AboutMenuStrip.Name = "AboutMenuStrip";
-            this.AboutMenuStrip.Size = new System.Drawing.Size(152, 22);
+            this.AboutMenuStrip.Size = new System.Drawing.Size(107, 22);
             this.AboutMenuStrip.Text = "&About";
             this.AboutMenuStrip.Click += new System.EventHandler(this.AboutMenuStrip_Click);
             // 
